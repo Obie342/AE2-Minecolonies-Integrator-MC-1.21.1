@@ -4,7 +4,7 @@ A CC: Tweaked Lua program that connects an **Applied Energistics 2** network to 
 
 The program reads active colony requests, exports available items from AE2, submits AE2 crafting jobs for craftable missing items, and reports anything that still requires manual attention.
 
-It is designed for an **All The Mods 10** setup using a storage inventory beside the ME Bridge, an Ender Chest delivery link, and warehouse racks at the colony.
+It is designed for an **All The Mods 10 (v 5.3.1 tested working)** setup using a storage inventory beside the ME Bridge, an Ender Chest delivery link, and warehouse racks at the colony.
 
 > [!CAUTION]
 > The included configuration runs in **live mode by default**:
@@ -21,13 +21,13 @@ It is designed for an **All The Mods 10** setup using a storage inventory beside
 
 A matching Ender Chest delivers items into MineColonies warehouse racks.
 
-![Warehouse Ender Chest and racks](assets/warehouse-ender-chest-racks.png)
+![Warehouse Ender Chest and racks](warehouse-ender-chest-racks.png)
 
 ### Advanced Monitor dashboard
 
 The dashboard displays exporter status, sent items, active crafting, missing items, manual requests, colony-managed requests, and output errors.
 
-![AE2 Colony Exporter dashboard](assets/advanced-monitor-dashboard.png)
+![AE2 Colony Exporter dashboard](advanced-monitor-dashboard.png)
 
 ## Features
 
@@ -144,7 +144,7 @@ The monitor and computer must be on the same CC: Tweaked wired peripheral networ
 Upload `startup.lua` to Pastebin, then run:
 
 ```text
-pastebin get YOUR_PASTE_ID startup
+pastebin get 85XA1g7t startup
 ```
 
 The filename `startup` causes CC: Tweaked to launch it automatically when the computer boots.
@@ -326,7 +326,7 @@ Stop the running program with `Ctrl+T`, then replace `startup`:
 
 ```text
 delete startup
-pastebin get YOUR_NEW_PASTE_ID startup
+pastebin get 85XA1g7t startup
 reboot
 ```
 
@@ -340,6 +340,10 @@ delete colony_export_state.txt
 delete colony_export.log
 delete colony_export_snapshot.txt
 delete missing_items.txt
+
+OR
+
+rm startup colony_export_state.txt colony_export.log colony_export_snapshot.txt missing_items.txt
 ```
 
 Then reinstall and reboot.
@@ -452,10 +456,10 @@ Confirm:
 ```text
 .
 ├── README.md
+├── LICENSE
 ├── startup.lua
-└── assets
-    ├── advanced-monitor-dashboard.png
-    └── warehouse-ender-chest-racks.png
+├── advanced-monitor-dashboard.png
+└── warehouse-ender-chest-racks.png
 ```
 
 ## Credits
@@ -469,4 +473,4 @@ Confirm:
 
 ## License
 
-No license is included by default. Add a license file before publishing if you want others to reuse or modify the project under explicit terms.
+MIT
