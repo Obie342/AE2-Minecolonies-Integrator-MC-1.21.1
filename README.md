@@ -470,7 +470,7 @@ Confirm:
 - Applied Energistics 2
 - MineColonies
 - Mekanism Tools
-- The earlier AE2 Colony implementation by `toastonrye`, which informed compatibility handling for request data, fingerprints, tags, components, tool tiers, and crafting behavior
+- The earlier AE2 Colony implementation by @toastonrye, which informed compatibility handling for request data, fingerprints, tags, components, tool tiers, and crafting behavior
 
 ## License
 
