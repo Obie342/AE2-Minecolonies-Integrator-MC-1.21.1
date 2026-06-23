@@ -57,6 +57,7 @@ The script was developed around the following ATM10 environment:
 | Applied Energistics 2 | 19.2.17 |
 | Advanced Peripherals | 0.7.57b |
 | CC: Tweaked | 1.116.2 |
+| Minecolonies | 1.1.1218-1.21.1-snapshot |
 
 Compatibility with other versions is not guaranteed.
 
