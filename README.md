@@ -142,7 +142,7 @@ The monitor and computer must be on the same CC: Tweaked wired peripheral networ
 
 ### 1. Download with Pastebin
 
-Upload `startup.lua` to Pastebin, then run:
+In an Advanced Computer run:
 
 ```text
 pastebin get 85XA1g7t startup
